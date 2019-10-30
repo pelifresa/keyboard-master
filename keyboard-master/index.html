@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Key Codes</title>
+    <style>
+        .keycode{
+            font-size: 30rem;
+            text-align: center;
+        }
+        .instructions{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="keycode"></div>
+<div class="instructions">Pulsa una tecla para ver su código</div>
+
+<script>
+    let boxKeyCode = document.getElementsByClassName('keycode')[0];
+    window.addEventListener('keydown', function (e){
+        boxKeyCode.innerHTML = e.keyCode;
+    });
+</script>
+</body>
+</html>
